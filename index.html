@@ -310,6 +310,93 @@ line-height: normal;
     top: 7%;
     left:5%
 }
+
+        @media (max-width: 768px) {
+  html, body {
+    background-size: auto;
+    background-position: top center;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    top: 2%;
+    left: 5%;
+    width: 20%;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text {
+    top: 25%;
+    left: 50%;
+    width: 90vw;
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 16px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .progress {
+    top: 45%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-wrapper {
+    top: 75%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, 0%);
+    animation: slideUpMobile 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 1.3s;
+  }
+
+  @keyframes slideUpMobile {
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+  }
+
+  .email-form {
+    width: 100%;
+  }
+
+  .icon_container {
+    top: 85%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, 0);
+    animation: slideInMobile 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 1.3s;
+  }
+
+  @keyframes slideInMobile {
+    to {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+  }
+  
+  .social-icons {
+    gap: 20px;
+  }
+
+  .first, .second, .upper, .right, .left {
+    display: none;
+  }
+}
     </style>
 </head>
 <body>
@@ -1059,3 +1146,4 @@ setTimeout(() => {
 }, 1200); // delay start by 1.2 seconds
 </script>
 </html>
+
