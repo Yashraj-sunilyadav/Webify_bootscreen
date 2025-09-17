@@ -44,6 +44,7 @@
       top: 48.4%;
       transform: translate(120%, -47.7%); /* Start far outside */
       animation: slideout 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+           animation-delay: 600ms;
     }
     @keyframes slideout {
       to {
@@ -58,6 +59,7 @@
       top: 48.4%;
       transform: translate(-120%, -47.7%); /* Start far outside */
       animation: slidein 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+          animation-delay: 600ms;
     }
     @keyframes slidein {
       to {
@@ -72,6 +74,7 @@
         left: 50%; /* horizontal center */
         transform: translate(-50%, -120%); /* start outside screen */
         animation: slideDown 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+          animation-delay: 600ms;
       }
 
       @keyframes slideDown {
@@ -125,7 +128,7 @@ line-height: normal;
     transform: translateX(-50%); /* only center horizontally */
     opacity: 0; /* start invisible */
     animation: slideUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay: 1.3s;
+    animation-delay: 600ms;
 }
 
 @keyframes slideUp {
@@ -249,7 +252,7 @@ line-height: normal;
          transform: translateX(150%); /* start off-screen to the left */
     opacity: 0; /* start invisible */
     animation: slideIn 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay: 1.3s;
+    animation-delay: 600ms;
 }
 
 @keyframes slideIn {
@@ -295,6 +298,7 @@ line-height: normal;
 .fade-element {
     opacity: 0; /* start invisible */
     animation: fadeInSteps 1.5s forwards; /* duration 1.1s */
+    animation-delay: 600ms;
 }
 
 @keyframes fadeInSteps {
@@ -335,6 +339,7 @@ line-height: normal;
     left: -82px;    
     transform: translate(-150%, -50%);   
      animation: mobileslideout 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; 
+      animation-delay: 600ms;
 
 }
 @keyframes mobileslideout {
@@ -349,6 +354,7 @@ line-height: normal;
   right: -87px;
   transform: translate(150%, -50%); /* X = off-screen, Y = center shift */
   animation: mobileslideIn 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation-delay: 600ms;
 }
 
 @keyframes mobileslideIn {
@@ -374,6 +380,7 @@ line-height: normal;
         left: 50%;
         transform: translate(-50%, -90%);
         animation: slideDown 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+          animation-delay: 600ms;
 
       }
 
@@ -415,6 +422,7 @@ line-height: normal;
 .fade-element {
     opacity: 0; /* start invisible */
     animation: fadeInSteps 1.5s forwards; /* duration 1.1s */
+    animation-delay: 600ms;
 }
 
 @keyframes fadeInSteps {
@@ -479,7 +487,7 @@ line-height: normal;
       transform: translate(-50%, 0%);
       /* Centers the element horizontally */
      animation: mobile_slideUp 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      animation-delay: 1.1s;
+      animation-delay: 600ms;
     }
 
     @keyframes mobile_slideUp {
@@ -632,27 +640,9 @@ line-height: normal;
 h1{
   color: white;
 }
-#counterm {
-    position: absolute;
-         top: calc(47.5% + 7px);
-    left: calc(50% + 284.07px / 2 - 45px);
-    color: white;
-    font-family: "Kode Mono", monospace;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 360;
-}
 
- .icon_container{
-        position: absolute;
-            bottom: 60px;
-            right: 22px;
-            transform: translateX(500%);
-         /* start off-screen to the left */
-     /* start invisible */
-    animation: slideIn 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay: 1.1s;
-}
+
+
 
 @keyframes slideIn {
     to {
@@ -700,7 +690,7 @@ h1{
          /* start off-screen to the left */
      /* start invisible */
     animation: slideIn 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay: 1.1s;
+   animation-delay: 600ms;
 }
 
 .desktop { display: none !important; }
@@ -720,7 +710,7 @@ h1{
         position: absolute;
         left: 9%;
         animation: downin 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-        animation-delay: 1.1s;
+        animation-delay: 600ms;
 
       }
 
@@ -758,7 +748,7 @@ h1{
         transform: translate(-50%, 0%);
         /* Centers the element horizontally */
         animation: mobile_slideUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-        animation-delay: 1.1s;
+       animation-delay: 600ms;
       }
 
       @keyframes mobile_slideUp {
@@ -1977,6 +1967,7 @@ setTimeout(() => {
 
 </script>
 </html>
+
 
 
 
