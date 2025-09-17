@@ -1896,96 +1896,6 @@ h1{
 
 </body>
 <script>
-setTimeout(() => {
-    
-
-
-
-
-    // Counter Animation
-    const counter = document.getElementById("counterm");
-    let number = 0;       // starting number
-    const maxNumber = 65; // target
-    const duration = 2700; // total animation time in ms
-    const fps = 60;        // frames per second
-    const steps = duration / (1000 / fps);
-    const stepValue = (maxNumber - number) / steps;
-
-    let frame = 0;
-    const animate = setInterval(() => {
-        frame++;
-        number = Math.min(maxNumber, Math.round(0 + stepValue * frame));
-        counter.textContent = number + "%";
-
-        if (number >= maxNumber) clearInterval(animate);
-    }, 1000 / fps);
-
-    
-
-
-    
-
-    // Form submit animation + sound
-    const form = document.getElementById("notifyForm");
-    const successSound = document.getElementById("successSound");
-
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        form.classList.add("success");
-
-        // Play sound
-        successSound.currentTime = 0;
-        successSound.play();
-    });
-}, 1200); 
-
-
-
-
-
-setTimeout(() => {
-    
-
-
-
-
-    // Counter Animation
-    const counter = document.getElementById("counterm");
-    let number = 0;       // starting number
-    const maxNumber = 65; // target
-    const duration = 2700; // total animation time in ms
-    const fps = 60;        // frames per second
-    const steps = duration / (1000 / fps);
-    const stepValue = (maxNumber - number) / steps;
-
-    let frame = 0;
-    const animate = setInterval(() => {
-        frame++;
-        number = Math.min(maxNumber, Math.round(0 + stepValue * frame));
-        counter.textContent = number + "%";
-
-        if (number >= maxNumber) clearInterval(animate);
-    }, 1000 / fps);
-
-    
-
-
-    
-
-    // Form submit animation + sound
-    const form = document.getElementById("notifyForm");
-    const successSound = document.getElementById("successSound");
-
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        form.classList.add("success");
-
-        // Play sound
-        successSound.currentTime = 0;
-        successSound.play();
-    });
-}, 1200); 
-
 
 
 setTimeout(() => {
@@ -2029,7 +1939,7 @@ setTimeout(() => {
         successSound.currentTime = 0;
         successSound.play();
     });
-}, 1200); 
+}, 2000); 
 
 setTimeout(() => {
     // mobile_counter Animation
@@ -2062,11 +1972,12 @@ setTimeout(() => {
       mobile_successSound.currentTime = 0;
       mobile_successSound.play();
     });
-  }, 1200);
+  }, 2000);
 
 
 </script>
 </html>
+
 
 
 
